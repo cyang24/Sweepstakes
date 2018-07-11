@@ -35,12 +35,11 @@ namespace Sweepstakes
         }
 
 
-        public Contestant(String firstName, String lastName, String Email, int RegistrationNumber)
+        public Contestant(String firstName, String lastName, String Email)
         {
             FirstName = firstName;
             LastName = lastName;
             Email = email;
-            RegistrationNumber = registrationNumber;
         }
     }
 }
