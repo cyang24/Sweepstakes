@@ -3,12 +3,12 @@ using System.Collections.Generic;
 
 namespace Sweepstakes
 {
-    public class Contestants
+    public class Contestant
     {
         private string firstName;
         private string lastName;
         private string email;
-        private string registrationNumber;
+        private int registrationNumber;
 
         public string FirstName
         {
@@ -28,14 +28,14 @@ namespace Sweepstakes
             set { email = value; }
         }
 
-        public string RegistrationNumber
+        public int RegistrationNumber
         {
             get { return registrationNumber; }
             set { registrationNumber = value; }
         }
 
 
-        public Contestants(String firstName, String lastName, String Email, String RegistrationNumber)
+        public Contestant(String firstName, String lastName, String Email, int RegistrationNumber)
         {
             FirstName = firstName;
             LastName = lastName;
