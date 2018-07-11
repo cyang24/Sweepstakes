@@ -5,8 +5,13 @@ namespace Sweepstakes
 {
     public class MarketingFirm
     {
-        public MarketingFirm()
+        public ISweepstakesManager manager;
+
+        public MarketingFirm(ISweepstakesManager Manager)
         {
+            this.manager = Manager;
+            User_Interface user_Interface = new User_Interface();
+            user_Interface.ChoseManager();
         }
     }
 }
