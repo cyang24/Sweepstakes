@@ -8,7 +8,7 @@ namespace Sweepstakes
 
         public Queue<Sweepstakes> myQueue;
 
-        public SweepstakesQueueManager()
+        public SweepstakesQueueManager(Sweepstakes sweepstakes)
         {
             managerName = "b";
             myQueue = new Queue<Sweepstakes>();

@@ -8,7 +8,7 @@ namespace Sweepstakes
     {   
         public Stack<Sweepstakes> myStack;
 
-        public SweepstakesStackManager()
+        public SweepstakesStackManager(Sweepstakes sweepstakes)
         {
             managerName = "a";
             myStack = new Stack<Sweepstakes>();

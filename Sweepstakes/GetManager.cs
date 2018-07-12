@@ -3,6 +3,6 @@ namespace Sweepstakes
 {
     public interface IGetManager
     {
-        Manager GetManager(string managerName);
+        Manager GetManager(string managerName, Sweepstakes sweepstakes);
     }
 }

@@ -3,18 +3,13 @@ using System.Collections.Generic;
 
 namespace Sweepstakes
 {
-    public class MarketingFirm 
+    public class MarketingFirm
     {
-        public string managerName;
-      
-        public MarketingFirm(User_Interface user_Interface)
+        public MarketingFirm(User_Interface_Factory user_Interface, Sweepstakes sweepstakes)
         {
-            Console.WriteLine("What manager type would you like to use? \na) Stack Manager \nb) Queue Manager");
-            managerName = Console.ReadLine().ToLower();
-
-            user_Interface.GetManager(managerName);
-        }  
-
+            user_Interface.GetManager(user_Interface.ChooseDataManager(), sweepstakes);
+            return;
+        }
 
     }
 }

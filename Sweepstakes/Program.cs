@@ -10,19 +10,22 @@ namespace Sweepstakes
         {
 
             Console.WriteLine("Test");
-
+            //Create new contestant
             Contestant contestant = new Contestant("Tom", "Tom", "Tom@yahoo.com");
-           
+            //Create sweepstakes
             Sweepstakes sweepstakes = new Sweepstakes("WIN $5000 DOLLARS");
+            sweepstakes.RegisterContestant(contestant);
 
-            User_Interface user_Interface = new User_Interface();
+            //Create UI(Factory)
+            User_Interface_Factory user_Interface = new User_Interface_Factory();
+        
+           //Create Marketing firm 
+            MarketingFirm marketing = new MarketingFirm(user_Interface, sweepstakes);
 
-            MarketingFirm marketing = new MarketingFirm(user_Interface);
-
-
+            sweepstakes.PrintContestantInfo(contestant);
 
             Console.ReadLine();
-            
+
         }
     }
 }
