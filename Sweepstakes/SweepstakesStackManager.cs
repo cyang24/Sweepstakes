@@ -4,12 +4,13 @@ using System.Collections.Generic;
 
 namespace Sweepstakes
 {
-    public class SweepstakesStackManager : ISweepstakesManager
+    public class SweepstakesStackManager : Manager, ISweepstakesManager
     {   
-        Stack<Sweepstakes> myStack;
+        public Stack<Sweepstakes> myStack;
 
         public SweepstakesStackManager()
         {
+            managerName = "a";
             myStack = new Stack<Sweepstakes>();
         }
 

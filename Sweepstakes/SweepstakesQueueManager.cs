@@ -3,12 +3,14 @@ using System.Collections.Generic;
 
 namespace Sweepstakes
 {
-    public class SweepstakesQueueManager : ISweepstakesManager
+    public class SweepstakesQueueManager : Manager, ISweepstakesManager
     {   
-        Queue<Sweepstakes> myQueue;
+
+        public Queue<Sweepstakes> myQueue;
 
         public SweepstakesQueueManager()
         {
+            managerName = "b";
             myQueue = new Queue<Sweepstakes>();
         }
 
@@ -20,7 +22,5 @@ namespace Sweepstakes
         {
             return myQueue.Dequeue();
         }
-
-
     }
 }

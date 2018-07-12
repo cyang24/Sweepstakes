@@ -17,6 +17,7 @@ namespace Sweepstakes
         public Sweepstakes(string name)
         {
             sweepstakeName = name;
+            contestantsRegistered = new Dictionary<int, Contestant>();
         }
 
         public void RegisterContestant(Contestant contestant)

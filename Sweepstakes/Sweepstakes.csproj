@@ -40,6 +40,8 @@
     <Compile Include="Contestant.cs" />
     <Compile Include="User Interface.cs" />
     <Compile Include="SweepstakesManager.cs" />
+    <Compile Include="GetManager.cs" />
+    <Compile Include="Manager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

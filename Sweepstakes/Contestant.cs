@@ -35,7 +35,7 @@ namespace Sweepstakes
         }
 
 
-        public Contestant(String firstName, String lastName, String Email)
+        public Contestant(string firstName, string lastName, string Email)
         {
             FirstName = firstName;
             LastName = lastName;
