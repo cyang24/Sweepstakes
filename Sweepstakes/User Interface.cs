@@ -28,20 +28,6 @@ namespace Sweepstakes
             return managerName;
         }
 
-
-        //public void GetContestantInformation(Contestant contestants)
-        //{
-        //    Console.WriteLine("Please enter your first name");
-        //    contestants.FirstName = Console.ReadLine();
-
-        //    Console.WriteLine("Please enter your last name");
-        //    contestants.LastName = Console.ReadLine();
-
-        //    Console.WriteLine("Please enter your email");
-        //    contestants.Email = Console.ReadLine();
-
-        //}
-        
         
     }
 }
