@@ -42,9 +42,11 @@ namespace Sweepstakes
            //Create Marketing firm 
             MarketingFirm marketing = new MarketingFirm(user_Interface, sweepstakes);
 
-            Console.WriteLine(sweepstakes.PickWinner());  
-            Console.WriteLine(sweepstakes2.PickWinner());
-            Console.WriteLine(sweepstakes3.PickWinner());
+            Console.WriteLine(sweepstakes.PickWinner() + "\n");  
+            Console.WriteLine(sweepstakes2.PickWinner()+ "\n");
+            Console.WriteLine(sweepstakes3.PickWinner()+ "\n");
+
+            Console.WriteLine("disclaimer: any similarities are purely coincidental.");
 
             Console.ReadLine();
 
